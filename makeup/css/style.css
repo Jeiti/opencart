@@ -76,7 +76,7 @@ a.sign-in{
 	padding: 4px 0;
 	font-weight: 600;
 }
-.header-grid-right input[type="text"],.header-grid-right input[type="submit"]{
+.header-grid-right input[type="text"],.header-grid-right input[type="password"],.header-grid-right input[type="submit"]{
 	outline: none;
 	border: none;
 	background: #4a4a4a;

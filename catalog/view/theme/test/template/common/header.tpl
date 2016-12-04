@@ -41,16 +41,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </ul>
       </div>
       <div class="header-grid-right">
-        <a href="#" class="sign-in">Sign In</a>
-        <form>
-          <input type="text" value="Username" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+        <a href="<?php echo $login; ?>" class="sign-in"><?php echo $text_login; ?></a>
+        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+          <input type="text" name="email" value="<?php echo $email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-email" class="form-control" />
 
-          <input type="text" value="<?php echo $password;?>" placeholder="<?php echo $entry_password;?>" />
+          <input type="password" name="password" value="<?php echo $password;?>" placeholder="<?php echo $entry_password;?>" id="input-password" class="form-control" />
 
-          <input type="submit" value="<?php echo $button_login; ?>" >
+          <input type="submit" value="<?php echo $button_login; ?>" class="btn btn-primary" />
         </form>
         <label>|</label>
-        <a href="/makeup/signup.html" class="sign-up">Sign Up</a>
+        <a href="<?php echo $register; ?>" class="sign-up">Sign Up</a>
       </div>
       <div class="clearfix"> </div>
     </div>
@@ -58,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
     <div class="header-bottom">
       <div class="logo">
-        <a href="index.html"><img src="/makeup/images/logo.png" alt=" " ></a>
+        <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" alt=" " ></a>
       </div>
       <div class="ad-right">
         <img class="img-responsive" src="/makeup/images/ad.png" alt=" " >
