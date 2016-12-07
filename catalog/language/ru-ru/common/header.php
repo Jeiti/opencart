@@ -17,3 +17,7 @@ $_['text_all']           = 'Смотреть Все';
 $_['entry_password']           = 'Введите пароль';
 $_['entry_email']           = 'Введите e-mail';
 $_['button_login']           = 'Go';
+$_['entry_history']    = 'Истории';
+$_['entry_contact']    = 'Контакты';
+
+
